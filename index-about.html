@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Godrej Interio</title>
+    <link rel="icon" href="https://www.godrejinterio.com/imagestore/images/godrejInterio/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="styles-about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>   
+</head>
+
+<body>
+
+    <header>
+        <!-- Header for Large Screen -->
+        <div class="header-area header-sticky d-none d-lg-block fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="header-logo">
+                            <a href="#">
+                                <img src="data:image/png;base64,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" alt="Logo; Homepage Link">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="header-menu">
+                            <ul class="nav-menu d-flex justify-content-between">
+
+                                <!-- Home Div -->
+                                <li class="nav-menu-children">
+                                    <a href="./index-home.html" class="nav-menu-title">HOME</a>
+                                </li>
+                                <!-- End Home div -->
+
+                                <!-- About -->
+                                <li>
+                                    <a href="#" class="nav-menu-title">ABOUT</a>
+                                </li>
+                                <!-- End About -->
+
+                                <!-- Shop -->
+                                <li class="nav-menu-shop">
+                                    <a href="#" class="nav-menu-title">SHOP</a>
+                                        <ul class="mega-sub-menu d-flex align-items-top justify-content-between">
+                                            
+                                            <!-- Shop Grid -->
+                                            <li class="menu-item-children">
+                                                <a href="#" class="sub-menu-title">SHOP GRID</a>
+                                                <ul class="sub-menu-list d-flex flex-column justify-content-start">
+                                                    <li><a href="#" class="sub-menu-item">Item 1</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 2</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 3</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 4</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Shop Grid -->
+
+                                            <!-- Shop List -->
+                                            <li class="menu-item-children">
+                                                <a href="#" class="sub-menu-title">SHOP LIST</a>
+                                                <ul class="sub-menu-list d-flex flex-column justify-content-start">
+                                                    <li><a href="#" class="sub-menu-item">Item 1</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 2</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Shop List -->
+
+                                            <!-- Shop Single -->
+                                            <li class="menu-item-children">
+                                                <a href="#" class="sub-menu-title">SHOP SINGLE</a>
+                                                <ul class="sub-menu-list d-flex flex-column justify-content-start">
+                                                    <li><a href="#" class="sub-menu-item">Item 1</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 2</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 3</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 4</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Item 5</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Shop Single -->
+
+                                            <!-- Shop Page -->
+                                            <li class="menu-item-children">
+                                                <a href="#" class="sub-menu-title">PAGE</a>
+                                                <ul class="sub-menu-list d-flex flex-column justify-content-start">
+                                                    <li><a href="#" class="sub-menu-item">About Us</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Cart</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Wishlist</a></li>
+                                                    <li><a href="#" class="sub-menu-item">Checkout</a></li>
+                                                    <li><a href="#" class="sub-menu-item">My Account</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- End Shop Page-->
+                                        </ul>                                
+                                </li>
+                                <!-- End Shop -->
+
+                                <!-- Pages -->
+                                <li class="nav-menu-children">
+                                    <a href="#" class="nav-menu-title">PAGES</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#" class="sub-menu-item">ABOUT US</a></li>
+                                        <li><a href="#" class="sub-menu-item">CART</a></li>
+                                        <li><a href="#" class="sub-menu-item">COMPARE</a></li>
+                                        <li><a href="#" class="sub-menu-item">WISHLIST</a></li>
+                                        <li><a href="#" class="sub-menu-item">EMPTY CART</a></li>
+                                        <li><a href="#" class="sub-menu-item">CHECKOUT</a></li>
+                                        <li><a href="#" class="sub-menu-item">MY ACCOUNT</a></li>
+                                        <li><a href="#" class="sub-menu-item">LOGIN</a></li>
+                                        <li><a href="#" class="sub-menu-item">REGISTER</a></li>
+                                    </ul>
+                                </li>
+                                <!-- End Pages-->
+
+                                <!-- Blog -->
+                                <li class="nav-menu-blog">
+                                    <a href="#" class="nav-menu-title">BLOG</a>
+                                    <ul class="sub-menu">
+
+                                        <!-- Blog 1 -->
+                                        <li class="d-flex">
+                                            <a href="#" class="sub-menu-item">Blog 1</a>
+                                            <ul class="sub-menu-blog">
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- End Blog 1 -->
+
+                                        <!-- Blog 2 -->
+                                        <li class="d-flex">
+                                            <a href="#" class="sub-menu-item">Blog 2</a>
+                                            <ul class="sub-menu-blog">
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- End Blog 2 -->
+
+                                        <!-- Blog 3 -->
+                                        <li class="d-flex">
+                                            <a href="#" class="sub-menu-item">Blog 3</a>
+                                            <ul class="sub-menu-blog">
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                                <li><a href="#" class="sub-menu-item">Blog Item</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- End Blog 3 -->
+
+                                    </ul>
+                                </li>
+                                <!-- End Blog -->
+
+                                <!-- Contact -->
+                                <li>
+                                    <a href="#" class="nav-menu-title">CONTACT</a>
+                                </li>
+                                <!-- End Contacts -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3">
+                        <div class="nav-right d-flex align-items-top justify-content-end">
+                            <div class="container d-flex align-items-center justify-content-end">
+                                <!-- Searchbar -->
+                                <div class="nav-search dropdown">
+                                    <button type="button" class="drop-btn btn dropdown-toggle" data-bs-toggle="dropdown"><i class="nav-right-icon fa-solid fa-magnifying-glass"></i></button>
+                                    <ul class="dropdown-menu drop-menu shadow">
+                                        <div class="nav-searchbar d-flex align-items-center justify-content-between">
+                                            <input type="text" class="drop-links nav-links nav-searchbar-input" placeholder="Search">                                    
+                                            <i class="fa-solid fa-magnifying-glass nav-searchbar-icon"></i>
+                                        </div>                    
+                                    </ul>
+                                </div>
+                                <!-- End Searchbar -->
+
+                                <!-- Profile -->
+                                <div class="nav-profile dropdown">
+                                    <button type="button" class="drop-btn btn dropdown-toggle" data-bs-toggle="dropdown"><i class="nav-right-icon fa-solid fa-user"></i></button>
+                                    <ul class="nav-right-menu dropdown-content shadow">
+                                        <a href="#" class="right-menu-item">My Account</a>
+                                        <a href="#" class="right-menu-item">Checkout</a>
+                                        <a href="#" class="right-menu-item">Sign In</a>
+                                    </ul>
+                                </div>
+                                <!-- End Profile -->
+
+                                <!-- Wishlist -->
+                                <div class="nav-icon">
+                                    <a href="#" class="px-2 nav-right-icon-link"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+                                <!-- End Wishlist -->
+
+                                <!-- Cart -->
+                                <div class="nav-icon">
+                                    <a href="#" class="ps-3 nav-right-icon-link"><i class="fa-solid fa-bag-shopping"></i></a>
+                                </div>
+                                <!-- End Cart -->
+
+                            </div> 
+                        </div>                   
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <!-- End Header for large screen -->
+
+        <!-- Header for mobile -->
+        <div class="header-mobile d-lg-none fixed-top">
+            <div class="header-mobile-top header-sticky">
+                <div class="container">
+                    <div class="row gx-2 align-items-center">
+                        
+                        <!-- Sidepanel -->
+                        <div class="col-2">
+                            <div class="header-toggle">
+                                <div id="mySidepanel" class="sidepanel shadow">
+
+                                    <!-- Sidepanel Top -->
+                                    <div class="sidepanel-menu-top sticky-top">
+                                        <a href="#">
+                                            <div class="py-3 sidepanel-menu-top-center d-flex justify-content-center align-items-center">
+                                                 <a href="#" class="px-2 text-center">Compare (3)</a>
+                                                 <a href="#" class="px-2 text-center">Wishlist (3)</a>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                            <div class="px-3 py-2 sidepanel-menu-caret d-flex justify-content-between align-items-center">
+                                                <h6>MENU</h6>
+                                                <i class="fa-solid fa-caret-left"></i>
+                                            </div>
+                                        </a> 
+                                    </div>
+                                    <!-- End Sidepanel Top -->
+                                               
+                                    <!-- Sidepanel List -->
+                                    <div class="sidepanel-menu-list">
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-start align-items-center">
+                                                <a href="./index-home.html">Home</a>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-start align-items-center">
+                                                <a href="#">About</a>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-between align-items-center">
+                                                <p>Shop</p>
+                                                <p>&plus;</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-between align-items-center">
+                                                <p>Pages</p>
+                                                <p>&plus;</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-between align-items-center">
+                                                <p>Blog</p>
+                                                <p>&plus;</p>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sidepanel-menu-nav d-flex justify-content-between align-items-center">
+                                                <p>Contact</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- End Sidepanel List-->
+                                </div>
+                                  
+                                <div id="main">
+                                    <button class="openbtn sidepanel-menu-button" onclick="openNav()">&#9776;</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Sidepanel -->
+
+                        <!-- Logo -->
+                        <div class="col-5 text-center">
+                            <div class="header-logo-mobile">
+                                <a href="#">
+                                    <img src="data:image/png;base64,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" alt="Logo; Homepage Link">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Logo -->
+
+                        <!-- Navbar-Right -->
+                        <div class="col-5">
+                            <div class="nav-right d-flex align-items-top justify-content-end">
+                                <div class="container d-flex align-items-center justify-content-end">
+                                           
+                                    <!-- Profile -->
+                                    <div class="nav-profile-mobile dropdown">
+                                        <button type="button" class="drop-btn btn dropdown-toggle" data-bs-toggle="dropdown"><i class="nav-right-icon fa-solid fa-user"></i></button>
+                                        <ul class="nav-right-menu-mobile dropdown-content shadow">
+                                            <a href="#" class="right-menu-item">My Account</a>
+                                            <a href="#" class="right-menu-item">Checkout</a>
+                                            <a href="#" class="right-menu-item">Sign In</a>
+                                        </ul>
+                                    </div>
+                                    <!-- End Profile -->
+        
+                                    <!-- Cart -->
+                                    <div class="nav-icon-mobile">
+                                        <a href="#" class="nav-right-icon-link"><i class="fa-solid fa-bag-shopping"></i></a>
+                                    </div>  
+                                    <!-- End Cart -->
+
+                                </div> 
+                            </div>   
+                        </div>
+                        <!-- End Navbar-Right-->
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- End header for Mobile -->
+    </header>
+
+    <main>
+        <div class="main-content">
+            
+            <!-- Page Banner -->
+            <div class="section page-banner-section d-flex align-items-center">
+                <div class="container">
+                    <div class="pt-5 page-banner-content d-flex flex-column justify-items-start">
+                        <h1 class="title text-white">ABOUT US</h1>
+                        <div class="d-flex justify-content-start align-items-baseline">
+                            <p class="pe-2">Home</p>
+                            <i class="px-2 text-white fa-solid fa-caret-right"></i>
+                            <p class="px-2 text-white">ABOUT US</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Banner-->
+
+            <!-- History -->
+            <div class="section sec-history">
+                <div class="container">
+                    <div class="history-content text-center pt-5">
+                        <div class="section-title">
+                            <h6 class="sub-title">OUR HISTORY</h6>
+                            <h2 class="title">GODREJ INTERIO</h2>
+                        </div>
+                        <p>
+                            Godrej Interio, a prominent name in the Indian furniture industry, 
+                            has a rich history that dates back to 1897. It is a part of the 
+                            Godrej Group, one of India's leading conglomerates. Godrej Interio 
+                            was established with the vision of providing innovative and high-quality 
+                            furniture solutions to customers across the country. Over the years, 
+                            the company has evolved and expanded its product range, catering to 
+                            diverse segments like residential, office, and institutional furniture. 
+                            With a strong emphasis on design, functionality, and sustainability, 
+                            Godrej Interio has become a trusted brand known for its durable and 
+                            aesthetically appealing furniture. Through its extensive network of 
+                            showrooms and dealers, the company has made its presence felt in both 
+                            urban and rural areas of India. Today, Godrej Interio continues to set 
+                            new benchmarks in the furniture industry, blending style with utility to 
+                            enhance the living and working spaces of millions of customers.
+                        </p>
+                    </div>
+                    <div class="divider-img text-center">
+                        <img src="https://htmldemo.net/furbar-1/furbar/assets/images/icon/icon-5.jpg" alt="Divider Icon">
+                    </div>
+                </div>
+            </div>
+            <!-- End History -->
+
+            <!-- Gallery -->
+            <div class="section sec-gallery">
+                <div class="container">
+                    <h2 class="title text-center pb-3">GALLERY</h2>
+                    <div class="row">
+                        
+                        <!-- Row 1 -->
+                        <div class="col-lg-8">
+                            <h4 class="img-gallery-desc pt-4">Minimalistic Designs</h4>
+                            <div class="image-gallery1">
+                                <img src="https://htmldemo.net/furbar-1/furbar/assets/images/images-gallery/image-1.jpg" alt="Gallery Sofa">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <h4 class="img-gallery-desc pt-4">Living Room</h4>
+                            <div class="image-gallery1">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/56101502SD01335/56101502SD01335_A1_803x602.jpg" alt="Gallery Living Room">
+                            </div>
+                        </div>
+                        <!-- End Row 1-->
+                        
+                        <!-- Row 2 -->
+                        <div class="col-lg-6">
+                            <h4 class="img-gallery-desc pt-5">Bedroom 1</h4>
+                            <div class="image-gallery2">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/56101719SD00128/56101719SD00128_A2_803x602.jpg" alt="Gallery Bedroom 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-6" >
+                            <h4 class="img-gallery-desc pt-5">Bedroom 2</h4>
+                            <div class="image-gallery2">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/56101515SD00191/56101515SD00191_A1_803x602.jpg" alt="Gallery Bedroom 2">
+                            </div>                            
+                        </div>
+                        <!-- End Row 2 -->
+                        
+                        <!-- Row 3 -->
+                        <div class="col-lg-6">
+                            <h4 class="img-gallery-desc pt-5">Study Table</h4>
+                            <div class="image-gallery3">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/56101597SD00068/56101597SD00068_A1_500x500.png" alt="Gallery Bedroom 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="img-gallery-desc pt-5">Bean Bags</h4>
+                            <div class="image-gallery3">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/60124513SD00045/60124513SD00045_A1_500x500.jpg" alt="Gallery Bedroom 2">
+                            </div>                            
+                        </div>
+                        <!-- End Row 3 -->
+
+                        <!-- Row 4 -->
+                        <div class="col-lg-4">
+                            <h4 class="img-gallery-desc pt-5">Kitchen</h4>
+                            <div class="image-gallery4">
+                                <img src="https://www.godrejinterio.com/imagestore/B2C/EspotImages/Images/Banners/TABCHR018_A1_500x500.jpg" alt="Gallery Kitchen">
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <h4 class="img-gallery-desc pt-5">Coffee Table</h4>
+                            <div class="image-gallery4">
+                                <img src="https://htmldemo.net/furbar-1/furbar/assets/images/images-gallery/image-3.jpg" alt="Gallery Coffee Table">
+                            </div>
+                        </div>
+                        <!-- End Row 4 -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Gallery -->
+
+            <!-- Boxes Info -->
+            <div class="section sec-boxes pt-5">
+                <div class="container">
+                    <div class="row">
+                        
+                        <!-- Years of Experience -->
+                        <div class="col-lg-3 col-6 col-sm-6 ">
+                            <div class="p-2 my-2 box d-flex flex-column justify-items-center align-items-center">
+                                <p class="text-center">126+</p>
+                                <p class="text-center">Years of Experience</p>
+                            </div>
+                        </div>
+                        <!-- End Years of Experience -->
+
+                        <!-- Happy Customers-->
+                        <div class="col-lg-3 col-6 col-sm-6">
+                            <div class="p-2 my-2 box d-flex flex-column justify-items-center align-items-center">
+                                <p class="text-center">30L</p>
+                                <p class="text-center">Happy Customers</p>
+                            </div>
+                        </div>
+                        <!-- End Happy Customers-->
+
+                        <!-- Awards Won -->
+                        <div class="col-lg-3 col-6 col-sm-6">
+                            <div class="p-2 my-2 box d-flex flex-column justify-items-center align-items-center">
+                                <p class="text-center">500+</p>
+                                <p class="text-center">Awards Won</p>
+                            </div>
+                        </div>
+                        <!-- End Awards Won -->
+
+                        <!-- Years of Experience -->
+                        <div class="col-lg-3 col-6 col-sm-6">
+                            <div class="p-2 my-2 box d-flex flex-column justify-items-center align-items-center">
+                                <p class="text-center">100%</p>
+                                <p class="text-center">Products Guaranteed</p>
+                            </div>
+                        </div>
+                        <!-- End Years of Experience -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Boxes Info -->
+
+            <!-- Team -->
+            <div class="section sec-team py-5">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">OUR TEAM</h6>
+                        <h2 class="title">MEET OUR TEAM</h2>
+                    </div>
+                    <div class="row">
+
+                        <!-- Image 1 -->
+                        <div class="offset-lg-3 col-lg-3 col-4 offset-2 offset-sm-2 col-sm-4 pt-4">
+                            <div class="team-desc">
+                                <img src="./goutam das.jpeg" alt="Mr. Goutam Das Image">
+                                <div class="pt-3 name-design d-flex flex-column align-items-center justify-content-center">
+                                    <p class="text-center">Mr. Goutam Das</p>
+                                    <p class="text-center">Associate Chief Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Image 1-->
+
+                        <!-- Image 2 -->
+                        <div class="col-lg-3 col-4 col-sm-4 pt-4">
+                            <div class="team-desc">
+                                <img src="./taran omray.jpeg" alt="Mr. Taran Omray Image">
+                                <div class="pt-3 name-design d-flex flex-column align-items-center justify-content-center">
+                                    <p class="text-center">Mr. Taran Omray</p>
+                                    <p class="text-center">Senior Project Manager</p>
+                                </div>
+                            </div>
+                        </div>      
+                        <!-- End Image 2-->                  
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Team -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer for large screens -->
+        <!-- Footer 1 -->
+        <div class="pt-2 footer-area-top d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-logo text-center">
+                            <a href="#">
+                                <img class="pt-1" src="data:image/png;base64,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" alt="Godrej Interio Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="footer-contact text-center d-flex align-items-center justify-content-center">
+                            <p>Join our weekly mailing list</p>
+                            <input type="text" placeholder="Enter mail-id">
+                            <button type="submit"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Footer 1 -->
+        <!-- Footer 2 -->
+        <div class="footer-area-bottom d-none d-lg-block">
+            <div class="pt-2 container">
+                <div class="row">
+                    
+                    <!-- About -->
+                    <div class="col-lg-2">
+                        <div class="footer-column d-flex flex-column justify-content-start">
+                            <p class="mb-2 footer-heading">ABOUT</p>
+                            <a class="footer-link" href="#">About Us</a>
+                            <a class="footer-link" href="#">Blogs</a>
+                            <a class="footer-link" href="#">Careers</a>
+                            <a class="footer-link" href="#">Media</a>
+                            <a class="footer-link" href="#">Green Initiative</a>
+                            <a class="footer-link" href="#">Design Process</a>
+                            <a class="footer-link" href="#">Sitemap</a>
+                        </div>                        
+                    </div>
+                    <!-- End About -->
+
+                    <!-- Policy -->
+                    <div class="col-lg-2">
+                        <div class="footer-column d-flex flex-column justify-content-start">
+                            <p class="mb-2 footer-heading">POLICY</p>
+                            <a class="footer-link" href="#">Terms & Conditions</a>
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                            <a class="footer-link" href="#">Furniture</a>
+                        </div>                        
+                    </div>
+                    <!-- End Policy-->
+                    
+                    <!-- Help -->
+                    <div class="col-lg-2">
+                        <div class="footer-column d-flex flex-column justify-content-start">
+                            <p class="mb-2 footer-heading">HELP</p>
+                            <a class="footer-link" href="#">Payment</a>
+                            <a class="footer-link" href="#">Shipping</a>
+                            <a class="footer-link" href="#">FAQ's</a>
+                        </div>                        
+                    </div>
+                    <!-- End Help-->
+                    
+                    <!-- Contact-->
+                    <div class="col-lg-2">
+                        <div class="footer-column d-flex flex-column justify-content-start">
+                            <p class="mb-2 footer-heading">CONTACT</p>
+                            <a class="footer-link" href="#">Contact Us</a>
+                            <a class="footer-link" href="#">Store Locator</a>
+                            <a class="footer-link" href="#">Service & Support</a>
+                            <a class="footer-link" href="#">Request A Callback</a>
+                        </div>                        
+                    </div>
+                    <!-- End COntact-->
+
+                    <!-- Visit us in -->
+                    <div class="col-lg-4">
+                        <div class="footer-column d-flex flex-column justify-content-start">
+                            <p class="mb-2 footer-heading">VISIT US IN</p>
+                            <p class="footer-places">Ahmedabad | Akola | Amravati |Bengaluru | Bhopal | Bhubaneswar |
+                                 Chandigarh | Chennai | Coimbatore | Cuttack | Darbhanga | Davanagere |
+                                 Delhi | Dhanbad | Faridabad | Gaya | Ghaziabad | Goa | Gurgaon |
+                                 Guwahati | Howrah | Hyderabad | Indore | Jaipur | Jammu | Kalyan |
+                                 Kanpur | Kolhapur | Kolkata | Lucknow | Mumbai | Nagpur | Nanded | 
+                                 Nasik | Navi Mumbai | North 24 Pgs | Patna | Pune | Raigarh | 
+                                 Raipur | Ranchi | Shimla | South 24 Pgs | Thane | Trivandrum | 
+                                 Tirupati | Varanasi | Visakhapatnam | Medinipur | Zirakpur | and more...
+                            </p>
+                        </div>                        
+                    </div>
+                    <!-- End Visit us in -->
+
+                </div>
+            </div>
+        </div>
+        <!-- End Footer 2 -->
+        <!-- Footer 3 Copyright -->
+        <div class="footer-area-cpr d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pt-1">
+                        <p class="text-center"><i class="fa-regular fa-copyright"></i>2023 Made by Aiswaryaa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer 3 Copyright -->
+        <!-- End Footer for Large Screens-->
+
+        <!-- Footer for mobile-->
+        <!-- Footer 1 -->
+        <div class="footer-area-mobile d-lg-none">
+            <div class="container">
+                <div class="row pt-1">
+                    <div class="col-12 text-start ">
+                        <div class="footer-logo-mobile text-center">
+                            <a href="#">
+                                <img src="data:image/png;base64,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" alt="Godrej Interio Logo">
+                            </a>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+        <!-- End Footer 1 -->
+        <!-- Footer 2 Copyright -->
+        <div class="footer-area-cpr d-lg-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center pt-1"><i class="fa-regular fa-copyright"></i>2023 Made by Aiswaryaa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer 2 Copyright -->
+    </footer>
+        
+
+<script>
+    //Sidepanel
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "65%";
+    }
+    
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+
+</script>
+</body>
+
+</html>

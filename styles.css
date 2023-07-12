@@ -1,0 +1,852 @@
+*{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: border-box;
+}
+
+/* General */
+img{
+    overflow-clip-margin: content-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    margin-bottom: -30px;
+}
+
+.header-mobile-top .container{
+    width: 100%;
+    height: 65px;
+}
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+}
+
+.header-menu ul li a{
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s linear;
+    display: block;
+    white-space: nowrap;
+}
+
+.header-menu ul li ul{
+    display: block;
+}
+
+ul{
+    padding: 0 ;
+    list-style-type: none;
+}
+
+/* 
+-------------------------------------------------------------------------
+
+Menu General */
+
+.nav-menu-title, .sub-menu-item, .sub-menu-title{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu-title:hover, .sub-menu-item:hover, .sub-menu-title:hover{
+    text-decoration: none;
+    color: #f2a100;
+}
+
+
+.header-menu ul li:hover> .sub-menu{
+    visibility: visible;
+    position: absolute;
+    display: block;
+} 
+
+.nav-menu .nav-menu-blog .sub-menu li:hover .sub-menu-blog{
+    visibility: visible;
+    position: absolute;
+    display: block;
+} 
+
+.header-menu ul li:hover > .sub-menu, .header-menu ul li:hover>.mega-sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-menu ul{
+    padding: 10px 18px 28px 18px;
+}
+
+.header-menu .sub-menu{
+    position: absolute;
+    width: 255px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(73, 73, 73, 0.1) 2px 2px 20px;
+    top: 75%;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 2px solid rgb(73, 73, 73);
+    padding: 10px 0px;
+    transition: all 0.3s linear 0s;
+}
+
+.header-menu .sub-menu li {
+    padding: 0;
+}
+
+.header-menu .sub-menu li a {
+    padding: 7px 20px;
+}
+
+.header-menu .sub-menu li .sub-menu {
+    visibility: hidden
+}
+
+/*---------------------------------------------------------------------
+
+Mega Shop Menu */
+
+.header-menu .mega-sub-menu {
+    position: absolute;
+    width: 70%;
+    top: 70%;
+    left: 15%;
+    right: 15%;
+    box-shadow: 2px 2px 20px rgba(73,73,73,.1);
+    background-color: #fff;
+    z-index: 9;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+}
+
+/* List items */
+.header-menu .mega-sub-menu li ul li{
+    padding: 5px 25px 5px 0px;
+}
+
+/* Heading Underline */
+.header-menu .mega-sub-menu .sub-menu-title{
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(209, 209, 209);
+}
+
+/* Individual Item box */
+.header-menu .mega-sub-menu .menu-item-children{
+    width: 150px;
+}
+
+.header-menu .mega-sub-menu .sub-menu-item{
+    color: rgb(95, 95, 95)
+} 
+
+.header-menu .mega-sub-menu .sub-menu-item:hover{
+    color: #f2a100;
+} 
+
+.header-menu .mega-sub-menu>li:hover>a {
+    color: #f2a100
+}
+
+.header-menu .mega-sub-menu>li .menu-item {
+    flex-direction: column;
+    margin-top: 20px
+}
+
+/*---------------------------------------------------------------------
+
+Blog */
+
+.header-menu .nav-menu-blog .sub-menu-blog{
+    position: absolute;
+    width: 255px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(73, 73, 73, 0.1) 2px 2px 20px;
+    left: 100%;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    border-top: 2px solid rgb(73, 73, 73);
+    padding: 10px 0px;
+    transition: all 0.3s linear 0s;
+}
+
+.header-menu ul li ul {
+    display: block;
+}
+
+.nav-menu-blog .sub-menu-item:hover .sub-menu-blog{
+    visibility: visible;
+    position:absolute;
+    opacity: 1;
+}
+
+
+/* 
+-----------------------------------------------------------------------
+Right bar
+
+
+Searchar */
+
+.nav-search{
+    padding: auto 10px auto 10px; 
+}
+
+.nav-right-icon{
+    color: #000000;
+}
+
+.nav-searchbar-input{
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid #f2a100;
+    border-right: none;
+    margin: 10px 0px 10px 15px ;
+    margin-right: 0px;
+    padding: 5px 2px 5px 20px;
+}
+
+.nav-searchbar-icon{
+    color: #808080;
+    border: 2px solid #f2a100;
+    padding: 9px;
+    margin: 10px 15px 10px 0px;
+    margin-left: 0px;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.drop-menu{
+    width: 300px;
+    left: 0;
+}
+
+.btn{
+    background-color: none;
+    border: none;
+}
+
+.btn:hover{
+    border: none;
+}
+
+
+/* Profile */
+
+.nav-profile{
+    padding-left: 6px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    right: 0;
+    transition: all 0.3s ease-in;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 0px;
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    transition: all 1s ease-in;
+}
+  
+  /* Change color of dropdown links on hover */
+.right-menu-item:hover {
+    background-color: none;
+    color: #f2a100;
+    transition: all 1s ease-in;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+
+/* Cart and wishlist */
+.nav-right-icon-link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-right-icon-link:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-right-menu-mobile{
+    scale: 80%;
+    top: 50%;
+}
+/*
+
+-----------------------------------------------------------------------------------------
+
+Mobile-UI
+
+*/
+
+.header-mobile{
+    background-color: #fff;
+    width: 100%;
+    height: 65px;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+}
+
+.header-logo-mobile{
+    scale: 60%;
+}
+
+/* Sidepanel */
+
+.sidepanel {
+    height: 100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* The sidepanel menu */
+.sidepanel-menu-list{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidepanel-menu-caret{
+    color: #fff;
+    font-size: 1rem;
+
+}
+.sidepanel-menu-caret h6{
+    margin: 0;
+    font-weight: 900;
+}
+
+.sidepanel-menu-caret i{
+    font-size: 1.3rem;
+    padding-right: 17px;
+}
+
+.sidepanel-menu-top-center a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.sidepanel-menu-top-center a:hover{
+    color: #f2a100;
+    text-decoration: none;
+}
+
+.sidepanel-menu-nav p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10px;
+    margin: 0;
+    padding: 4px 10px 4px 10px;
+}
+
+.sidepanel-menu-nav p:nth-child(2){
+    font-size: 1.3rem;
+    padding: 0;
+    padding-right: 30px;
+}
+
+.sidepanel-menu-list a{
+    border-top: 1px solid #e2e2e2;
+}
+
+/* The sidepanel links */
+.sidepanel-menu-list a, .sidepanel-menu-nav a{
+    padding: 2px 8px 4px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+.sidepanel-menu-nav a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px 6px;
+    border: none;
+}
+.sidepanel-menu-list a:hover, .sidepanel-menu-nav a{
+    color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel-menu-caret ,.sidepanel .closebtn {
+    background-color: #252c51;
+    height: 40px;
+    text-decoration: none;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0) ;
+    color: #000000;
+    border: none;
+}
+
+.openbtn:hover {
+    cursor: pointer;
+}
+
+.nav-profile-mobile{
+    scale: 85%;
+}
+
+.nav-icon-mobile{
+    scale: 90%;
+}
+
+/*
+
+----------------------------------------------------------------------------------------------------------------------------
+
+MAIN CONTENT */
+
+/* Slider */
+
+.section{
+    width: 100%;
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+
+.sec-banner{
+    top: 65px;
+    width: 100%;
+    background-color: #e9e1f7;
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+
+.sec-banner .banner-shape{
+    width: 500px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #eee5ff;
+    position: absolute;
+    top: -6rem;
+    right: 10rem;
+    transform: rotate(45deg);
+}
+
+.banner-title{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+.banner-sub-title{
+    font-size: 1rem;
+}
+
+.banner-image{
+    position: relative;
+} 
+
+.banner-image img{
+    width: 35rem;
+}
+
+
+.banner-text{
+    position: relative;
+}
+
+.banner-text :nth-child(2){
+    margin-top: -30px;
+}
+
+.btn-design{
+    overflow: hidden;
+    background-color: #f2a100;
+    color: #fff;
+    text-decoration: none;
+    width: 10rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-radius: 8px;
+    z-index: 3;
+}
+
+.btn-design:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-ani-left{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-ani-left::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #252c51;
+    position: absolute;
+    transition: all 0.6s ease-in-out;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+}
+
+.btn-ani-left:hover::before{
+    left: 0;
+}
+
+/* Cards Discount */
+
+.sec-discount-products{
+    margin-top: 65px;
+}
+.box{
+    width: 100%;
+    height: 20rem;
+    background-size: cover;
+    border-radius: 0px;
+    background-position: -3rem;
+    position: relative;
+    background-position: -5rem;
+}
+
+.box p:first-child{
+    padding: 2rem 1rem 0rem 1rem;
+    margin: 0;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.box p:nth-child(2){
+    position: relative;
+    font-size: 2rem;
+    color: #f2a100;
+    font-weight: 600;
+    padding-left: 1rem;
+}
+
+.box a{
+    top: 14rem;
+    left: 1rem;
+    width: 90%;
+    position: absolute;
+    z-index: 3;
+}
+
+.box::after{
+    content: "";
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 87%;
+    left: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 20%;
+    box-shadow: 0 30px 30px 0 rgba(0,0,0,0.35);
+}
+
+.box:hover::after{
+    opacity: 0.95;
+}
+
+
+/* Welcome to store */
+.sec-welc{
+    margin-top: 80px;
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.welc-to-store p:first-child{
+    font-size: 3rem;
+    color: #f2a100;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.welc-to-store p:nth-child(2){
+    font-size: 1.rem;
+    position: relative;
+    z-index: 1;
+}
+
+.welc-to-store a{
+    width: 15rem;
+}
+
+
+.box-opacity{
+    width: 100%;
+    height: 700px;
+    background-color: #f9cd65;
+    position: absolute;
+    opacity: 0;
+}
+
+
+
+.sec-welc:hover .box-opacity{
+    opacity: 0.15;
+}
+
+
+/* New Furniture on Sale */
+.sec-furniture-shop{
+    margin-top: 60px;
+}
+
+.furniture-shop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.banner-furniture-sale{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 380px;
+}
+
+.banner-furniture-sale img{
+    transition: all 0.3s linear;
+    width: 100%;
+}
+
+.banner-furniture-sale:hover img{
+    scale: 110%;
+}
+
+.banner-furniture-content{
+    position: absolute;
+    left: 10%;
+    width: 85%;
+    bottom: 35%;
+}
+
+.banner-furniture-content p:first-child{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.banner-furniture-content p:nth-child(2){
+    font-size: 2.3rem;
+    font-weight: bolder;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.08rem;
+    -webkit-text-stroke-color: #fff;
+    margin-top: -5px;
+}
+
+.banner-furniture-content a{
+    margin-top: -10px;
+    position: absolute;
+}
+
+/* Furniture Shop */
+
+.furniture-shop img{
+    width: 100%;
+}
+
+.shop-icon{
+    padding: 5px;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in;
+}
+
+.shop-icon:hover{
+    color: #fff;
+    background-color: #252c51;
+    fill-opacity: 0.5;
+}
+
+.shop-icon-opacity{
+    position: relative;
+    opacity: 1;
+    bottom: 0;
+}
+
+.shop-icon:hover .shop-icon-opacity{
+    opacity: 1;
+} 
+
+.furni-shop-footer-text p:first-child{
+    font-size: 1rem;
+}
+
+.furni-shop-footer-text p:nth-child(2){
+    font-size: 1.2rem;
+    color: #f2a100;
+    font-weight: bold;
+}
+
+
+/* Shop Images Gallery */
+.sec-furni-images img{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------
+
+Footer */
+
+.footer-area-top{
+    margin-top: 80px;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #f9cd65;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+}
+
+.footer-contact p{
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 15px 10px 0 0;
+
+}
+
+.footer-contact input{
+    border: none;
+    border-bottom: 0.1rem solid black;
+    background-color: #ffe4a6;
+    padding-top: -20px;
+}
+
+.footer-contact button{
+    border: none;
+    border-bottom: 0.1rem solid black;
+    background-color: #ffe4a6;
+}
+
+.footer-area-bottom{
+    background-color: #ffc146;
+    height: 26rem;
+}
+
+.footer-heading{
+    font-size: 1.5rem;
+    font-weight:900;
+    color: #252c51;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #2f396b;
+    font-weight: 400;
+}
+
+.footer-link:hover{
+    color: #252c51;
+}
+
+.footer-places{
+    color: #2f396b;
+}
+
+.footer-area-cpr{
+    bottom: 0;
+    background-color: #fff;
+    font-size: 0.7rem;
+    height: 1.5rem;
+}
+
+/* Footer-Mobile */
+.footer-area-mobile{
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #f9cd65;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+}
+
+.footer-contact-mobile p{
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.footer-logo-mobile{
+    scale: 60%;
+}
+
+.footer-contact-mobile button{
+    border: none;
+    border-bottom: 0.1rem solid black;
+    background-color: #ffe4a6;
+    scale: 70%;
+}
+
+.footer-contact-mobile input{
+    border: none;
+    border-bottom: 0.1rem solid black;
+    background-color: #ffe4a6;
+    padding-top: -20px;
+    scale: 70%;
+}
+
+
+
+
+
+
+
