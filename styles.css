@@ -265,14 +265,14 @@ Searchar */
     width: 150px;
     text-decoration: none;
     display: block;
-    transition: all 1s ease-in;
+    transition: all 0.3s ease-in;
 }
   
   /* Change color of dropdown links on hover */
 .right-menu-item:hover {
     background-color: none;
     color: #f2a100;
-    transition: all 1s ease-in;
+    transition: all 0.3s ease-in;
 }
   
 /* Show the dropdown menu on hover */
